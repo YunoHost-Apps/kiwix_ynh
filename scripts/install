@@ -71,14 +71,13 @@ ynh_system_user_create --username=$app --home_dir="$final_path"
 ynh_script_progression --message="Setting up source files..." --weight=3
 
 ynh_app_setting_set --app=$app --key=final_path --value=$final_path
-mkdir -p $final_path/bin
 # Download, check integrity, uncompress and patch the source from app.src
-ynh_setup_source --dest_dir="$final_path/bin" --source_id="$architecture"
+ynh_setup_source --dest_dir="$final_path" --source_id="$architecture"
 
 chmod 750 "$final_path"
 chmod -R o-rwx "$final_path"
 chown -R $app:www-data "$final_path"
-chmod +x $final_path/bin/{kiwix-manage,kiwix-serve,kiwix-search,kiwix-read}
+chmod +x $final_path/{kiwix-manage,kiwix-serve,kiwix-search,kiwix-read}
 
 #=================================================
 # NGINX CONFIGURATION
@@ -106,7 +105,7 @@ pushd $datadir
 	curl -LO http://download.kiwix.org/zim/wikipedia/wikipedia_en_computer_maxi_2020-08.zim > /dev/null
 popd
 
-sudo -u $app $final_path/bin/kiwix-manage $datadir/library.xml add $datadir/*.zim
+sudo -u $app $final_path/kiwix-manage $datadir/library.xml add $datadir/*.zim
 
 #=================================================
 # SETUP SYSTEMD
