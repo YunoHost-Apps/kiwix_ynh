@@ -1,5 +1,5 @@
-SOURCE_URL=https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-x86_64-3.1.2.tar.gz
-SOURCE_SUM=63d3e32f184fbc1fdfe4c206575daf3d39b9d949ed7fa38e7ea18bab64e5364e
+SOURCE_URL=https://download.kiwix.org/nightly/2022-01-18/kiwix-tools_linux-x86_64-2022-01-18.tar.gz
+SOURCE_SUM=8b6856d032d8a3bfc5e6ba0a913d2a47e4096b3bdb592653c65d04ad4d19e47b
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
