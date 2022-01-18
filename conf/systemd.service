@@ -1,0 +1,14 @@
+[Unit]
+Description=Kiwix
+
+[Service]
+Type=simple
+User=__APP__
+Group=__APP__
+ExecStart=__FINALPATH__/bin/kiwix-serve --daemon --address 127.0.0.1 --port __PORT__ --library __DATADIR__/library.xml --urlRootLocation=__PATH__/
+RemainAfterExit=yes
+Restart=on-abort
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
