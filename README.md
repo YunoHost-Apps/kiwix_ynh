@@ -38,26 +38,11 @@ Kiwix is an offline reader for online content like Wikipedia, Project Gutenberg,
 
 ![](./doc/screenshots/screenshot.png)
 
-## Disclaimers / important information
-
-* Any known limitations, constrains or stuff not working, such as (but not limited to):
-    * requiring a full dedicated domain ?
-    * architectures not supported ?
-    * not-working single-sign on or LDAP integration ?
-    * the app requires an important amount of RAM / disk / .. to install or to work properly
-    * etc...
-
-* Other infos that people should be aware of, such as:
-    * any specific step to perform after installing (such as manually finishing the install, specific admin credentials, ...)
-    * how to configure / administrate the application if it ain't obvious
-    * upgrade process / specificities / things to be aware of ?
-    * security considerations ?
-
 ## Documentation and resources
 
 * Official app website: https://www.kiwix.org/
 * Official admin documentation: https://wiki.kiwix.org/wiki/Kiwix-serve/
-* Upstream app code repository: https://github.com/kiwix
+* Upstream app code repository: https://github.com/kiwix/kiwix-tools
 * YunoHost documentation for this app: https://yunohost.org/app_kiwix
 * Report a bug: https://github.com/YunoHost-Apps/kiwix_ynh/issues
 
