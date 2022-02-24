@@ -13,6 +13,9 @@ source /usr/share/yunohost/helpers
 # MANAGE SCRIPT FAILURE
 #=================================================
 
+ynh_clean_setup () {
+	ynh_clean_check_starting
+}
 # Exit if an error occurs during the execution of the script
 ynh_abort_if_errors
 
@@ -21,7 +24,7 @@ ynh_abort_if_errors
 #=================================================
 
 domain=$YNH_APP_ARG_DOMAIN
-path_url=$YNH_APP_ARG_PATH
+path_url="/"
 is_public=$YNH_APP_ARG_IS_PUBLIC
 architecture=$YNH_ARCH
 
@@ -102,7 +105,7 @@ chmod -R o-rwx "$datadir"
 chown -R $app:www-data "$datadir"
 
 pushd $datadir
-	curl -LO http://download.kiwix.org/zim/wikipedia/wikipedia_en_computer_maxi_2020-08.zim > /dev/null
+	curl -LO http://download.kiwix.org/zim/wikipedia/wikipedia_en_computer_maxi_2022-02.zim > /dev/null
 popd
 
 sudo -u $app $final_path/kiwix-manage $datadir/library.xml add $datadir/*.zim
@@ -118,19 +121,11 @@ ynh_add_systemd_config
 #=================================================
 # GENERIC FINALIZATION
 #=================================================
-# SETUP LOGROTATE
-#=================================================
-ynh_script_progression --message="Configuring log rotation..." --weight=1
-
-# Use logrotate to manage application logfile(s)
-ynh_use_logrotate
-
-#=================================================
 # INTEGRATE SERVICE IN YUNOHOST
 #=================================================
 ynh_script_progression --message="Integrating service in YunoHost..." --weight=1
 
-yunohost service add $app --description="A short description of the app" --log="/var/log/$app/$app.log"
+yunohost service add $app --log="systemd"
 
 #=================================================
 # START SYSTEMD SERVICE
@@ -138,7 +133,7 @@ yunohost service add $app --description="A short description of the app" --log="
 ynh_script_progression --message="Starting a systemd service..." --weight=1
 
 # Start a systemd service
-ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemd_action --service_name=$app --action="start" --log_path="systemd"
 
 #=================================================
 # SETUP SSOWAT
@@ -148,6 +143,8 @@ ynh_script_progression --message="Configuring permissions..." --weight=1
 # Make app public if necessary
 if [ $is_public -eq 1 ]
 then
+	# Everyone can access the app.
+	# The "main" permission is automatically created before the install script.
 	ynh_permission_update --permission="main" --add="visitors"
 fi
 

@@ -13,7 +13,7 @@
         "website": "https://www.kiwix.org/",
         "demo": "http://library.kiwix.org/",
         "admindoc": "https://wiki.kiwix.org/wiki/Kiwix-serve/",
-        "code": "https://github.com/kiwix"
+        "code": "https://github.com/kiwix/kiwix-tools"
     },
     "license": "GPL-3.0-or-later",
     "maintainer": {
@@ -28,16 +28,10 @@
         "nginx"
     ],
     "arguments": {
-        "install" : [
+        "install": [
             {
                 "name": "domain",
                 "type": "domain"
-            },
-            {
-                "name": "path",
-                "type": "path",
-                "example": "/kiwix",
-                "default": "/kiwix"
             },
             {
                 "name": "is_public",
