@@ -104,11 +104,13 @@ chmod 750 "$datadir"
 chmod -R o-rwx "$datadir"
 chown -R $app:www-data "$datadir"
 
-pushd $datadir
-	curl -LO http://download.kiwix.org/zim/wikipedia/wikipedia_en_computer_maxi_2022-02.zim > /dev/null
-popd
 
-sudo -u $app $final_path/kiwix-manage $datadir/library.xml add $datadir/*.zim
+if [ ${PACKAGE_CHECK_EXEC:-0} -eq 1 ]; then
+	pushd $datadir
+		curl -LO http://download.kiwix.org/zim/wikipedia/wikipedia_en_computer_maxi_2022-02.zim > /dev/null
+	popd
+	sudo -u $app $final_path/kiwix-manage $datadir/library.xml add $datadir/*.zim
+fi
 
 #=================================================
 # SETUP SYSTEMD
