@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # Kiwix for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/kiwix.svg)](https://dash.yunohost.org/appci/app/kiwix) ![](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/kiwix.svg)](https://dash.yunohost.org/appci/app/kiwix) ![Working status](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)  
 [![Install Kiwix with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=kiwix)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -36,25 +36,41 @@ Kiwix is an offline reader for online content like Wikipedia, Project Gutenberg,
 
 ## Screenshots
 
-![](./doc/screenshots/screenshot.png)
+![Screenshot of Kiwix](./doc/screenshots/screenshot.png)
+
+## Disclaimers / important information
+
+### How to add zim files?
+
+- Download one or more ZIM files, e.g. from [https://download.kiwix.org/zim/](https://download.kiwix.org/zim/)
+- Put the ZIM files into /home/yunohost.app/kiwix/
+- Add them to the library with the following command:
+```
+/var/www/kiwix/kiwix-manage /home/yunohost.app/kiwix/library.xml add /home/yunohost.app/kiwix/*.zim
+```
+
+- Restart the service:
+
+`yunohost service restart kiwix`
 
 ## Documentation and resources
 
-* Official app website: https://www.kiwix.org/
-* Official admin documentation: https://wiki.kiwix.org/wiki/Kiwix-serve/
-* Upstream app code repository: https://github.com/kiwix/kiwix-tools
-* YunoHost documentation for this app: https://yunohost.org/app_kiwix
-* Report a bug: https://github.com/YunoHost-Apps/kiwix_ynh/issues
+* Official app website: <https://www.kiwix.org/>
+* Official admin documentation: <https://wiki.kiwix.org/wiki/Kiwix-serve/>
+* Upstream app code repository: <https://github.com/kiwix/kiwix-tools>
+* YunoHost documentation for this app: <https://yunohost.org/app_kiwix>
+* Report a bug: <https://github.com/YunoHost-Apps/kiwix_ynh/issues>
 
 ## Developer info
 
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/kiwix_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
-```
+
+``` bash
 sudo yunohost app install https://github.com/YunoHost-Apps/kiwix_ynh/tree/testing --debug
 or
 sudo yunohost app upgrade kiwix -u https://github.com/YunoHost-Apps/kiwix_ynh/tree/testing --debug
 ```
 
-**More info regarding app packaging:** https://yunohost.org/packaging_apps
+**More info regarding app packaging:** <https://yunohost.org/packaging_apps>
