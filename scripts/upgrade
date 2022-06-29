@@ -89,7 +89,7 @@ fi
 chmod 750 "$final_path"
 chmod -R o-rwx "$final_path"
 chown -R $app:www-data "$final_path"
-chmod +x $final_path/{kiwix-manage,kiwix-serve,kiwix-search,kiwix-read}
+chmod +x $final_path/{kiwix-manage,kiwix-serve,kiwix-search}
 
 #=================================================
 # NGINX CONFIGURATION
