@@ -35,6 +35,21 @@ Kiwix est un lecteur hors-ligne pour contenus web qui permet en particulier d’
 
 ![Capture d'écran de Kiwix](./doc/screenshots/screenshot.png)
 
+## Avertissements / informations importantes
+
+### Comment ajouter des fichiers ZIM ?
+
+- Téléchargez un ou plusieurs fichiers ZIM, par ex. [https://download.kiwix.org/zim/](https://download.kiwix.org/zim/)
+- Mettez les fichiers ZIM dans `/home/yunohost.app/kiwix/`
+- Ajoutez-les à la bibliothèque avec la commande suivante :
+```
+/var/www/kiwix/kiwix-manage /home/yunohost.app/kiwix/library.xml add /home/yunohost.app/kiwix/*.zim
+```
+
+- Redémarrez le service :
+
+`yunohost service restart kiwix`
+
 ## Documentations et ressources
 
 * Site officiel de l'app : <https://www.kiwix.org/>
