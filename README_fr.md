@@ -27,7 +27,7 @@ Kiwix est un lecteur hors-ligne pour contenus web qui permet en particulier d’
 - Embedded in Kiwix UI
 - Capable de traiter un fichier ZIM ou des fichiers de bibliothèque XML
 
-**Version incluse :** 3.1.2~ynh1
+**Version incluse :** 3.1.2~ynh2
 
 **Démo :** http://library.kiwix.org/
 

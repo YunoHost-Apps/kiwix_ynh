@@ -30,7 +30,7 @@ Kiwix is an offline reader for online content like Wikipedia, Project Gutenberg,
 - RESTful API endpoint with OPDS (XML)
 
 
-**Shipped version:** 3.1.2~ynh1
+**Shipped version:** 3.1.2~ynh2
 
 **Demo:** http://library.kiwix.org/
 
