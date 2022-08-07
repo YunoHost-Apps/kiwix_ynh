@@ -13,7 +13,8 @@
         "website": "https://www.kiwix.org/",
         "demo": "http://library.kiwix.org/",
         "admindoc": "https://wiki.kiwix.org/wiki/Kiwix-serve/",
-        "code": "https://github.com/kiwix/kiwix-tools"
+        "code": "https://github.com/kiwix/kiwix-tools",
+        "cpe": "cpe:2.3:a:kiwix:kiwix"
     },
     "license": "GPL-3.0-or-later",
     "maintainer": {
