@@ -5,9 +5,9 @@ name = "Kiwix"
 description.en = "Sharing Web content with people without Internet access"
 description.fr = "Partager du contenu Web avec des personnes sans accès à Internet"
 
-version = "3.1.2~ynh2"
+version = "3.5.0~ynh1"
 
-maintainers = []
+maintainers = ["eric_G"]
 
 [upstream]
 license = "GPL-3.0-or-later"
@@ -15,22 +15,19 @@ website = "https://www.kiwix.org/"
 demo = "http://library.kiwix.org/"
 admindoc = "https://wiki.kiwix.org/wiki/Kiwix-serve/"
 code = "https://github.com/kiwix/kiwix-tools"
-cpe = "???" # FIXME: optional but recommended if relevant, this is meant to contain the Common Platform Enumeration, which is sort of a standard id for applications defined by the NIST. In particular, Yunohost may use this is in the future to easily track CVE (=security reports) related to apps. The CPE may be obtained by searching here: https://nvd.nist.gov/products/cpe/search. For example, for Nextcloud, the CPE is 'cpe:2.3:a:nextcloud:nextcloud' (no need to include the version number)
-fund = "???" # FIXME: optional but recommended (or remove if irrelevant / not applicable). This is meant to be an URL where people can financially support this app, especially when its development is based on volunteers and/or financed by its community. YunoHost may later advertise it in the webadmin.
 
 [integration]
-yunohost = ">= 4.3.0"
-architectures = "all" # FIXME: can be replaced by a list of supported archs using the dpkg --print-architecture nomenclature (amd64/i386/armhf/arm64), for example: ["amd64", "i386"]
+yunohost = ">= 11.1.18"
+architectures = ["amd64", "armhf"]
 multi_instance = true
-ldap = "?" # FIXME: replace with true, false, or "not_relevant". Not to confuse with the "sso" key : the "ldap" key corresponds to wether or not a user *can* login on the app using its YunoHost credentials.
-sso = "?" # FIXME: replace with true, false, or "not_relevant". Not to confuse with the "ldap" key : the "sso" key corresponds to wether or not a user is *automatically logged-in* on the app when logged-in on the YunoHost portal.
-disk = "50M" # FIXME: replace with an **estimate** minimum disk requirement. e.g. 20M, 400M, 1G, ...
-ram.build = "50M" # FIXME: replace with an **estimate** minimum ram requirement. e.g. 50M, 400M, 1G, ...
-ram.runtime = "50M" # FIXME: replace with an **estimate** minimum ram requirement. e.g. 50M, 400M, 1G, ...
+ldap = false
+sso = false
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
 
 [install]
     [install.domain]
-    # this is a generic question - ask strings are automatically handled by Yunohost's core
     type = "domain"
     full_domain = true
 
@@ -40,11 +37,12 @@ ram.runtime = "50M" # FIXME: replace with an **estimate** minimum ram requiremen
 
 [resources]
         [resources.sources.main]
-        amd64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-x86_64-3.1.2.tar.gz"
-        amd64.sha256 = "63d3e32f184fbc1fdfe4c206575daf3d39b9d949ed7fa38e7ea18bab64e5364e"
-        armhf.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-armhf-3.1.2.tar.gz"
-        armhf.sha256 = "eeb69ab4b8b6b39d8e8f8afd248a211149c0f199018afa4669c7f5b917661b12"
+        amd64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-x86_64-3.5.0.tar.gz"
+        amd64.sha256 = "110d4b00b0c6aa3fa6982c3f3cc5d4143af90caa935b1e23e0ecd80680f269e8"
+        armhf.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-armhf-3.5.0.tar.gz"
+        armhf.sha256 = "41242099546401250268fee9bf48c43c2217b0a1d14efb1b90ae15bafcf05bcc"
 
+    [resources.ports]
 
     [resources.system_user]
 
