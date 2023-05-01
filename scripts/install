@@ -33,12 +33,12 @@ ynh_add_nginx_config
 #=================================================
 # CREATE DATA DIRECTORY
 #=================================================
-#ynh_script_progression --message="Creating a data directory..." --weight=1
+ynh_script_progression --message="Creating a data directory..." --weight=1
 
-#pushd $data_dir
-#	ynh_exec_as $app curl -LO http://download.kiwix.org/zim/wikipedia/wikipedia_en_computer_maxi_2022-02.zim > /dev/null
-#popd
-#ynh_exec_as $app $install_dir/kiwix-manage $data_dir/library.xml add $data_dir/*.zim
+pushd $data_dir
+	ynh_exec_as $app curl -LO http://download.kiwix.org/zim/wikipedia/wikipedia_fr_test_2023-04.zim > /dev/null
+popd
+ynh_exec_as $app $install_dir/kiwix-manage $data_dir/library.xml add $data_dir/*.zim
 
 #=================================================
 # SETUP SYSTEMD
