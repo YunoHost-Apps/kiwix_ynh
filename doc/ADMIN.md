@@ -1,10 +1,10 @@
 ### How to add zim files?
 
 - Download one or more ZIM files, e.g. from [https://download.kiwix.org/zim/](https://download.kiwix.org/zim/)
-- Put the ZIM files into `/home/yunohost.app/kiwix/`
+- Put the ZIM files into `__DATA_DIR__`
 - Add them to the library with the following command:
 ```
-/var/www/kiwix/kiwix-manage /home/yunohost.app/kiwix/library.xml add /home/yunohost.app/kiwix/*.zim
+__INSTALL_DIR__/kiwix-manage __DATA_DIR__/library.xml add __DATA_DIR__/*.zim
 ```
 
 - Restart the service:
