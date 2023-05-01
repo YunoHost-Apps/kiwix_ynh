@@ -1,6 +1,0 @@
-SOURCE_URL=https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-armhf-3.1.2.tar.gz
-SOURCE_SUM=eeb69ab4b8b6b39d8e8f8afd248a211149c0f199018afa4669c7f5b917661b12
-SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
-SOURCE_IN_SUBDIR=true
-SOURCE_EXTRACT=true

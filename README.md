@@ -5,7 +5,8 @@ It shall NOT be edited by hand.
 
 # Kiwix for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/kiwix.svg)](https://dash.yunohost.org/appci/app/kiwix) ![Working status](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/kiwix.svg)](https://dash.yunohost.org/appci/app/kiwix) ![Working status](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)
+
 [![Install Kiwix with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=kiwix)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -21,37 +22,19 @@ Kiwix is an offline reader for online content like Wikipedia, Project Gutenberg,
 
 - Full text search engine
 - Search suggestions
-- Really small and efficient
 - Compatible with almost all browsers
-- Available on all platforms
 - Available as command line executable
 - Embedded in Kiwix UI
 - Able to deal with one ZIM file or XML library files
-- RESTful API endpoint with OPDS (XML)
 
 
-**Shipped version:** 3.1.2~ynh2
+**Shipped version:** 3.5.0~ynh1
 
 **Demo:** http://library.kiwix.org/
 
 ## Screenshots
 
 ![Screenshot of Kiwix](./doc/screenshots/screenshot.png)
-
-## Disclaimers / important information
-
-### How to add zim files?
-
-- Download one or more ZIM files, e.g. from [https://download.kiwix.org/zim/](https://download.kiwix.org/zim/)
-- Put the ZIM files into `/home/yunohost.app/kiwix/`
-- Add them to the library with the following command:
-```
-/var/www/kiwix/kiwix-manage /home/yunohost.app/kiwix/library.xml add /home/yunohost.app/kiwix/*.zim
-```
-
-- Restart the service:
-
-`yunohost service restart kiwix`
 
 ## Documentation and resources
 
