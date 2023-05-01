@@ -22,13 +22,10 @@ Kiwix is an offline reader for online content like Wikipedia, Project Gutenberg,
 
 - Full text search engine
 - Search suggestions
-- Really small and efficient
 - Compatible with almost all browsers
-- Available on all platforms
 - Available as command line executable
 - Embedded in Kiwix UI
 - Able to deal with one ZIM file or XML library files
-- RESTful API endpoint with OPDS (XML)
 
 
 **Shipped version:** 3.5.0~ynh1
