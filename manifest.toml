@@ -31,6 +31,10 @@ ram.runtime = "50M"
     type = "domain"
     full_domain = true
 
+    [install.path]
+    type = "path"
+    default = "/kiwix"
+
     [install.init_main_permission]
     type = "group"
     default = "visitors"
