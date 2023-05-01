@@ -105,9 +105,9 @@ chmod -R o-rwx "$datadir"
 chown -R $app:www-data "$datadir"
 
 pushd $datadir
-	ynh_exec_as $app curl -LO http://download.kiwix.org/zim/wikipedia/wikipedia_en_computer_maxi_2022-02.zim > /dev/null
+	ynh_exec_warn_less ynh_exec_as $app curl -LO http://download.kiwix.org/zim/wikipedia/wikipedia_en_computer_maxi_2022-02.zim
 popd
-ynh_exec_as $app $final_path/kiwix-manage $datadir/library.xml add $datadir/*.zim
+ynh_exec_warn_less ynh_exec_as $app $final_path/kiwix-manage $datadir/library.xml add $datadir/*.zim
 
 #=================================================
 # SETUP SYSTEMD
