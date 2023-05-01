@@ -31,28 +31,13 @@ Kiwix is an offline reader for online content like Wikipedia, Project Gutenberg,
 - RESTful API endpoint with OPDS (XML)
 
 
-**Shipped version:** 3.1.2~ynh2
+**Shipped version:** 3.5.0~ynh1
 
 **Demo:** http://library.kiwix.org/
 
 ## Screenshots
 
 ![Screenshot of Kiwix](./doc/screenshots/screenshot.png)
-
-## Disclaimers / important information
-
-### How to add zim files?
-
-- Download one or more ZIM files, e.g. from [https://download.kiwix.org/zim/](https://download.kiwix.org/zim/)
-- Put the ZIM files into `/home/yunohost.app/kiwix/`
-- Add them to the library with the following command:
-```
-/var/www/kiwix/kiwix-manage /home/yunohost.app/kiwix/library.xml add /home/yunohost.app/kiwix/*.zim
-```
-
-- Restart the service:
-
-`yunohost service restart kiwix`
 
 ## Documentation and resources
 
