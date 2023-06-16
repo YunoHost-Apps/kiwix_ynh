@@ -36,7 +36,7 @@ ynh_add_nginx_config
 ynh_script_progression --message="Creating a data directory..." --weight=1
 
 pushd $data_dir
-	ynh_exec_warn_less ynh_exec_as $app curl -LO http://download.kiwix.org/zim/wikipedia/wikipedia_fr_test_2023-04.zim > /dev/null
+	ynh_exec_warn_less ynh_exec_as $app curl -LO https://download.kiwix.org/zim/wikipedia/wikipedia_fr_climate_change_mini_2023-04.zim > /dev/null
 popd
 ynh_exec_warn_less ynh_exec_as $app $install_dir/kiwix-manage $data_dir/library.xml add $data_dir/*.zim
 
