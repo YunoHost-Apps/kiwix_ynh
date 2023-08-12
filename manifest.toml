@@ -5,7 +5,7 @@ name = "Kiwix"
 description.en = "Sharing Web content with people without Internet access"
 description.fr = "Partager du contenu Web avec des personnes sans accès à Internet"
 
-version = "3.5.0~ynh2"
+version = "3.5.0~ynh3"
 
 maintainers = ["eric_G"]
 
@@ -17,8 +17,8 @@ admindoc = "https://wiki.kiwix.org/wiki/Kiwix-serve/"
 code = "https://github.com/kiwix/kiwix-tools"
 
 [integration]
-yunohost = ">= 11.1.20"
-architectures = ["amd64", "armhf"]
+yunohost = ">= 11.2"
+architectures = ["amd64", "armhf", "arm64"]
 multi_instance = true
 ldap = false
 sso = false
@@ -41,6 +41,8 @@ ram.runtime = "50M"
         amd64.sha256 = "110d4b00b0c6aa3fa6982c3f3cc5d4143af90caa935b1e23e0ecd80680f269e8"
         armhf.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-armhf-3.5.0.tar.gz"
         armhf.sha256 = "41242099546401250268fee9bf48c43c2217b0a1d14efb1b90ae15bafcf05bcc"
+        arm64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-aarch64-3.5.0.tar.gz"
+        arm64.sha256 = "2a5c88bba79ff8b253138bbd960c40c0588a13a9e52b6a41cd979c0940f7d72c"
 
     [resources.ports]
 
