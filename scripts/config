@@ -6,7 +6,7 @@ function run__upload_button() {
     local data_dir=$(ynh_app_setting_get --app=$app --key=data_dir)
     local filename="$(echo "$upload_url"  | awk -F/ '{print $NF}')"
     ynh_print_info --message="Downloading file…"
-    wget --tries 3 --no-dns-cache --timeout 900 --output-document="$data_dir/$filename" "$upload_url" 2>>
+    wget --tries 3 --no-dns-cache --timeout 900 --output-document="$data_dir/$filename" "$upload_url" 2>&1
     ynh_print_info --message="Adding file to Kiwix library"
     $install_dir/kiwix-manage $data_dir/library.xml add "$data_dir/$filename"
     yunohost service restart kiwix
