@@ -1,6 +1,5 @@
 ### Comment ajouter des fichiers ZIM ?
 
-
 #### Ajouter un fichier ZIM via son URL
 - Sélectionnez l'onglet "Upload content" qui se trouve ci-dessus.
 
