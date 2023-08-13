@@ -10,7 +10,7 @@ name.en = "Upload content"
         type = "string"
         ask.en = "Content URL"
         help.en = "For example: https://download.kiwix.org/zim/other/pokepedia_fr_all_maxi_2021-01.zim"
-        help.fr = "Par exemple: https://download.kiwix.org/zim/other/pokepedia_fr_all_maxi_2021-01.zim"
+        help.fr = "Par exemple : https://download.kiwix.org/zim/other/pokepedia_fr_all_maxi_2021-01.zim"
 
         [main.upload.upload_button]
         ask.en = "Upload"
