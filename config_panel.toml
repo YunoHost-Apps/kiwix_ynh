@@ -1,0 +1,19 @@
+version = "1.0"
+
+[main]
+name.en = "Upload content"
+
+    [main.upload]
+
+        [main.upload.upload_url]
+        default = ""
+        type = "string"
+        ask.en = "Content URL"
+        help.en = "For example: https://download.kiwix.org/zim/other/pokepedia_fr_all_maxi_2021-01.zim"
+        help.fr = "Par exemple : https://download.kiwix.org/zim/other/pokepedia_fr_all_maxi_2021-01.zim"
+
+        [main.upload.upload_button]
+        ask.en = "Upload"
+        type = "button"
+        style = "success"
+        enabled = "upload_url"
