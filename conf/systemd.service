@@ -5,8 +5,7 @@ Description=Kiwix: Sharing Web content
 Type=simple
 User=__APP__
 Group=__APP__
-ExecStart=__INSTALL_DIR__/kiwix-serve --daemon --address 127.0.0.1 --port __PORT__ --library __DATA_DIR__/library.xml --urlRootLocation=__PATH__/
-RemainAfterExit=yes
+ExecStart=__INSTALL_DIR__/kiwix-serve --address 127.0.0.1 --port __PORT__ --library __DATA_DIR__/library.xml --urlRootLocation=__PATH__/
 Restart=on-abort
 RestartSec=5s
 
