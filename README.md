@@ -28,7 +28,7 @@ Kiwix is an offline reader for online content like Wikipedia, Project Gutenberg,
 - Able to deal with one ZIM file or XML library files
 
 
-**Shipped version:** 3.5.0~ynh3
+**Shipped version:** 3.5.0~ynh4
 
 **Demo:** http://library.kiwix.org/
 
