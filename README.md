@@ -41,7 +41,7 @@ Kiwix is an offline reader for online content like Wikipedia, Project Gutenberg,
 * Official app website: <https://www.kiwix.org/>
 * Official admin documentation: <https://wiki.kiwix.org/wiki/Kiwix-serve/>
 * Upstream app code repository: <https://github.com/kiwix/kiwix-tools>
-* YunoHost documentation for this app: <https://yunohost.org/app_kiwix>
+* YunoHost Store: <https://apps.yunohost.org/app/kiwix>
 * Report a bug: <https://github.com/YunoHost-Apps/kiwix_ynh/issues>
 
 ## Developer info
