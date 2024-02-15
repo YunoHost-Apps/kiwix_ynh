@@ -5,7 +5,7 @@ name = "Kiwix"
 description.en = "Sharing Web content with people without Internet access"
 description.fr = "Partager du contenu Web avec des personnes sans accès à Internet"
 
-version = "3.5.0~ynh4"
+version = "3.6.0~ynh1"
 
 maintainers = []
 
@@ -36,12 +36,12 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        amd64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-x86_64-3.5.0.tar.gz"
-        amd64.sha256 = "110d4b00b0c6aa3fa6982c3f3cc5d4143af90caa935b1e23e0ecd80680f269e8"
-        armhf.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-armhf-3.5.0.tar.gz"
-        armhf.sha256 = "41242099546401250268fee9bf48c43c2217b0a1d14efb1b90ae15bafcf05bcc"
-        arm64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-aarch64-3.5.0.tar.gz"
-        arm64.sha256 = "2a5c88bba79ff8b253138bbd960c40c0588a13a9e52b6a41cd979c0940f7d72c"
+        amd64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-x86_64-3.6.0.tar.gz"
+        amd64.sha256 = "dd58996b99f69f8eb3bc80ca4a58b1ef32cf16a1a9d7c50d3a4957220cf1f0c0"
+        armhf.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-armv6-3.6.0.tar.gz"
+        armhf.sha256 = "50c9b4da1f14eec96becbe6b2c8fbd428e2faf6d5008b4a2470859610e63b7bf"
+        arm64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-aarch64-3.6.0.tar.gz"
+        arm64.sha256 = "f47533b1746469fae129132462814f7c425a2b47dc2db4b17c5803ae99362a2f"
 
     [resources.ports]
 
