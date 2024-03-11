@@ -34,7 +34,7 @@ then
 
 	mkdir -p $install_dir/bin
 	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$install_dir" 
+	ynh_setup_source --dest_dir="$install_dir" --full_replace=1
 fi
 
 chown -R $app:www-data "$install_dir"
