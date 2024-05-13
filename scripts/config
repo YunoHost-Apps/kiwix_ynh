@@ -2,6 +2,12 @@
 source /usr/share/yunohost/helpers
 ynh_abort_if_errors
 
+function get__upload_url() {
+    # Gotta have this to prevent the infamous "Config panel question should be initialized with a value during install or upgrade."
+    # (at least on bookworm which is has tighter consistency etc)
+    echo ""
+}
+
 function run__upload_button() {
     local data_dir=$(ynh_app_setting_get --app=$app --key=data_dir)
     local filename="$(echo "$upload_url"  | awk -F/ '{print $NF}')"
