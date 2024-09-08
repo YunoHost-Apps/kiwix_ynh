@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # Kiwix YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/kiwix.svg)](https://dash.yunohost.org/appci/app/kiwix) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/kiwix.svg)](https://ci-apps.yunohost.org/ci/apps/kiwix/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)
 
 [![Instalatu Kiwix YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=kiwix)
 
