@@ -17,7 +17,7 @@ admindoc = "https://wiki.kiwix.org/wiki/Kiwix-serve/"
 code = "https://github.com/kiwix/kiwix-tools"
 
 [integration]
-yunohost = ">= 11.2.29"
+yunohost = ">= 11.2.30"
 helpers_version = "2.1"
 architectures = ["amd64", "armhf", "arm64"]
 multi_instance = true
