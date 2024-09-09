@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # Kiwix for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/kiwix.svg)](https://dash.yunohost.org/appci/app/kiwix) ![Working status](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)
+[![Integration level](https://dash.yunohost.org/integration/kiwix.svg)](https://ci-apps.yunohost.org/ci/apps/kiwix/) ![Working status](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)
 
 [![Install Kiwix with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=kiwix)
 
@@ -28,7 +28,7 @@ Kiwix is an offline reader for online content like Wikipedia, Project Gutenberg,
 - Able to deal with one ZIM file or XML library files
 
 
-**Shipped version:** 3.6.0~ynh2
+**Shipped version:** 3.6.0~ynh3
 
 **Demo:** <http://library.kiwix.org/>
 

@@ -5,7 +5,7 @@ No se debe editar a mano.
 
 # Kiwix para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/kiwix.svg)](https://dash.yunohost.org/appci/app/kiwix) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)
+[![Nivel de integración](https://dash.yunohost.org/integration/kiwix.svg)](https://ci-apps.yunohost.org/ci/apps/kiwix/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)
 
 [![Instalar Kiwix con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=kiwix)
 
@@ -28,7 +28,7 @@ Kiwix is an offline reader for online content like Wikipedia, Project Gutenberg,
 - Able to deal with one ZIM file or XML library files
 
 
-**Versión actual:** 3.6.0~ynh2
+**Versión actual:** 3.6.0~ynh3
 
 **Demo:** <http://library.kiwix.org/>
 
@@ -46,7 +46,7 @@ Kiwix is an offline reader for online content like Wikipedia, Project Gutenberg,
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/kiwix_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/kiwix_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 

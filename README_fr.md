@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # Kiwix pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/kiwix.svg)](https://dash.yunohost.org/appci/app/kiwix) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/kiwix.svg)](https://ci-apps.yunohost.org/ci/apps/kiwix/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)
 
 [![Installer Kiwix avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=kiwix)
 
@@ -26,7 +26,7 @@ Kiwix est un lecteur hors-ligne pour contenus web qui permet en particulier d’
 - Embedded in Kiwix UI
 - Capable de traiter un fichier ZIM ou des fichiers de bibliothèque XML
 
-**Version incluse :** 3.6.0~ynh2
+**Version incluse :** 3.6.0~ynh3
 
 **Démo :** <http://library.kiwix.org/>
 
