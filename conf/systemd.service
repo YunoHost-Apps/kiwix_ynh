@@ -1,5 +1,5 @@
 [Unit]
-Description=Kiwix: Sharing Web content
+Description=Kiwix: sharing Web content
 
 [Service]
 Type=simple
