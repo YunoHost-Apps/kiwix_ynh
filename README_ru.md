@@ -5,7 +5,9 @@
 
 # Kiwix для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/kiwix.svg)](https://ci-apps.yunohost.org/ci/apps/kiwix/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/kiwix)](https://ci-apps.yunohost.org/ci/apps/kiwix/)
+![Состояние работы](https://apps.yunohost.org/badge/state/kiwix)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/kiwix)
 
 [![Установите Kiwix с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=kiwix)
 
