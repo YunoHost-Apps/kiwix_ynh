@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
 source _common.sh
 source /usr/share/yunohost/helpers
 
@@ -8,6 +12,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Setting up source files..."
 
+# Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir"
 
 chmod +x $install_dir/{kiwix-manage,kiwix-serve,kiwix-search}
@@ -17,11 +22,12 @@ chmod +x $install_dir/{kiwix-manage,kiwix-serve,kiwix-search}
 #=================================================
 ynh_script_progression "Adding system configurations related to $app..."
 
+# Create a dedicated NGINX config using the conf/nginx.conf template
 ynh_config_add_nginx
 
+# Create a dedicated systemd config
 ynh_config_add_systemd
-
-yunohost service add $app --description="Internet without Internet access" --log="systemd"
+yunohost service add "$app" --description="Internet without Internet access" --log="systemd"
 
 #=================================================
 # CREATE DATA DIRECTORY
@@ -29,7 +35,7 @@ yunohost service add $app --description="Internet without Internet access" --log
 ynh_script_progression "Creating a data directory..."
 
 pushd $data_dir
-	ynh_hide_warnings ynh_exec_as_app curl -LO https://download.kiwix.org/zim/wikipedia/wikipedia_fr_climate_change_mini_2023-04.zim > /dev/null
+	ynh_hide_warnings ynh_exec_as_app curl -LO https://download.kiwix.org/zim/wikipedia/wikipedia_fr_climate_change_mini_2023-05.zim > /dev/null
 popd
 
 ynh_hide_warnings ynh_exec_as_app $install_dir/kiwix-manage $data_dir/library.xml add $data_dir/*.zim
@@ -39,7 +45,8 @@ ynh_hide_warnings ynh_exec_as_app $install_dir/kiwix-manage $data_dir/library.xm
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --service=$app --action="start" --log_path="systemd"
+# Start a systemd service
+ynh_systemctl --service="$app" --action="start" --log_path="systemd"
 
 #=================================================
 # END OF SCRIPT
