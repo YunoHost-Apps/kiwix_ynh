@@ -1,5 +1,6 @@
 [Unit]
 Description=Kiwix: sharing Web content
+After=network.target
 
 [Service]
 Type=simple
@@ -10,8 +11,6 @@ Restart=on-abort
 RestartSec=5s
 
 # Sandboxing options to harden security
-# Depending on specificities of your service/app, you may need to tweak these
-# .. but this should be a good baseline
 # Details for these options: https://www.freedesktop.org/software/systemd/man/systemd.exec.html
 NoNewPrivileges=yes
 PrivateTmp=yes

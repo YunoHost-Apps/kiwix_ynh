@@ -1,6 +1,11 @@
 #!/bin/bash
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
 source /usr/share/yunohost/helpers
-#REMOVEME? ynh_abort_if_errors
+
+ynh_abort_if_errors
 
 function get__upload_url() {
     # Gotta have this to prevent the infamous "Config panel question should be initialized with a value during install or upgrade."
@@ -18,4 +23,5 @@ function run__upload_button() {
     yunohost service restart kiwix
 }
 
-ynh_app_config_run $1
+#=================================================
+ynh_app_config_run "$1"
