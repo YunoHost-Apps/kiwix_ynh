@@ -5,7 +5,9 @@ It shall NOT be edited by hand.
 
 # Kiwix for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/kiwix.svg)](https://ci-apps.yunohost.org/ci/apps/kiwix/) ![Working status](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)
+[![Integration level](https://apps.yunohost.org/badge/integration/kiwix)](https://ci-apps.yunohost.org/ci/apps/kiwix/)
+![Working status](https://apps.yunohost.org/badge/state/kiwix)
+![Maintenance status](https://apps.yunohost.org/badge/maintained/kiwix)
 
 [![Install Kiwix with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=kiwix)
 

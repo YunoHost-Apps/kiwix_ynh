@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # Kiwix voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/kiwix.svg)](https://ci-apps.yunohost.org/ci/apps/kiwix/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/kiwix)](https://ci-apps.yunohost.org/ci/apps/kiwix/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/kiwix)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/kiwix)
 
 [![Kiwix met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=kiwix)
 

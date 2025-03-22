@@ -1,3 +1,5 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
 packaging_format = 2
 
 id = "kiwix"
@@ -17,13 +19,12 @@ admindoc = "https://wiki.kiwix.org/wiki/Kiwix-serve/"
 code = "https://github.com/kiwix/kiwix-tools"
 
 [integration]
-yunohost = ">= 11.2.30"
+yunohost = ">= 12.0.9"
 helpers_version = "2.1"
 architectures = ["amd64", "armhf", "arm64"]
 multi_instance = true
 
 ldap = false
-
 sso = false
 
 disk = "50M"
@@ -39,15 +40,15 @@ ram.runtime = "50M"
     default = "visitors"
 
 [resources]
-        [resources.sources.main]
-        amd64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-x86_64-3.6.0.tar.gz"
-        amd64.sha256 = "dd58996b99f69f8eb3bc80ca4a58b1ef32cf16a1a9d7c50d3a4957220cf1f0c0"
-        armhf.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-armv6-3.6.0.tar.gz"
-        armhf.sha256 = "50c9b4da1f14eec96becbe6b2c8fbd428e2faf6d5008b4a2470859610e63b7bf"
-        arm64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-aarch64-3.6.0.tar.gz"
-        arm64.sha256 = "f47533b1746469fae129132462814f7c425a2b47dc2db4b17c5803ae99362a2f"
-
-    [resources.ports]
+    [resources.sources.main]
+    amd64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-x86_64-3.6.0.tar.gz"
+    amd64.sha256 = "dd58996b99f69f8eb3bc80ca4a58b1ef32cf16a1a9d7c50d3a4957220cf1f0c0"
+    armhf.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-armv6-3.6.0.tar.gz"
+    armhf.sha256 = "50c9b4da1f14eec96becbe6b2c8fbd428e2faf6d5008b4a2470859610e63b7bf"
+    arm64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-aarch64-3.6.0.tar.gz"
+    arm64.sha256 = "f47533b1746469fae129132462814f7c425a2b47dc2db4b17c5803ae99362a2f"
+    autoupdate.strategy = "latest_github_release"
+    autoupdate.needs_manual_tweaks = true
 
     [resources.system_user]
 
@@ -57,3 +58,5 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
+
+    [resources.ports]

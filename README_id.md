@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Kiwix untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/kiwix.svg)](https://ci-apps.yunohost.org/ci/apps/kiwix/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/kiwix.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/kiwix.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/kiwix)](https://ci-apps.yunohost.org/ci/apps/kiwix/)
+![Status kerja](https://apps.yunohost.org/badge/state/kiwix)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/kiwix)
 
 [![Pasang Kiwix dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=kiwix)
 
