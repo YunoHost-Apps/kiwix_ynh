@@ -7,7 +7,7 @@ name = "Kiwix"
 description.en = "Sharing Web content with people without Internet access"
 description.fr = "Partager du contenu Web avec des personnes sans accès à Internet"
 
-version = "3.6.0~ynh3"
+version = "3.6.0~ynh4"
 
 maintainers = []
 
@@ -47,8 +47,10 @@ ram.runtime = "50M"
     armhf.sha256 = "50c9b4da1f14eec96becbe6b2c8fbd428e2faf6d5008b4a2470859610e63b7bf"
     arm64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-aarch64-3.6.0.tar.gz"
     arm64.sha256 = "f47533b1746469fae129132462814f7c425a2b47dc2db4b17c5803ae99362a2f"
-    autoupdate.strategy = "latest_github_release"
-    autoupdate.needs_manual_tweaks = true
+
+    # Autoupdate disabled because the assets are on a custom website. Also it would need arch-specific regex to know what to pick from the release assets
+    #autoupdate.strategy = "latest_github_release"
+    #autoupdate.needs_manual_tweaks = true
 
     [resources.system_user]
 
