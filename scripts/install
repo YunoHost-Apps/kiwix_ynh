@@ -35,7 +35,7 @@ yunohost service add "$app" --description="Internet without Internet access" --l
 ynh_script_progression "Creating a data directory..."
 
 pushd $data_dir
-	ynh_hide_warnings ynh_exec_as_app curl -LO https://download.kiwix.org/zim/wikipedia/wikipedia_fr_climate_change_mini_2025-05.zim > /dev/null
+	ynh_hide_warnings ynh_exec_as_app curl -LO https://download.kiwix.org/zim/wikipedia/wikipedia_fr_climate_change_mini_2025-**.zim > /dev/null
 popd
 
 ynh_hide_warnings ynh_exec_as_app $install_dir/kiwix-manage $data_dir/library.xml add $data_dir/*.zim
