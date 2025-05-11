@@ -8,7 +8,8 @@
 - Put the ZIM files into `__DATA_DIR__`
 - Add them to the library with the following command:
 ```
-__INSTALL_DIR__/kiwix-manage __DATA_DIR__/library.xml add __DATA_DIR__/*.zim
+sudo yunohost app shell __APP__
+./kiwix-manage __DATA_DIR__/library.xml add __DATA_DIR__/*.zim
 ```
 
 - Restart the service:
