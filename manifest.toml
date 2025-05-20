@@ -7,7 +7,7 @@ name = "Kiwix"
 description.en = "Sharing Web content with people without Internet access"
 description.fr = "Partager du contenu Web avec des personnes sans accès à Internet"
 
-version = "3.6.0~ynh4"
+version = "3.6.0~ynh5"
 
 maintainers = []
 
