@@ -7,7 +7,7 @@ name = "Kiwix"
 description.en = "Sharing Web content with people without Internet access"
 description.fr = "Partager du contenu Web avec des personnes sans accès à Internet"
 
-version = "3.6.0~ynh5"
+version = "3.7.0~ynh1"
 
 maintainers = []
 
@@ -41,12 +41,12 @@ ram.runtime = "50M"
 
 [resources]
     [resources.sources.main]
-    amd64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-x86_64-3.6.0.tar.gz"
-    amd64.sha256 = "dd58996b99f69f8eb3bc80ca4a58b1ef32cf16a1a9d7c50d3a4957220cf1f0c0"
-    armhf.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-armv6-3.6.0.tar.gz"
-    armhf.sha256 = "50c9b4da1f14eec96becbe6b2c8fbd428e2faf6d5008b4a2470859610e63b7bf"
-    arm64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-aarch64-3.6.0.tar.gz"
-    arm64.sha256 = "f47533b1746469fae129132462814f7c425a2b47dc2db4b17c5803ae99362a2f"
+    amd64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-x86_64-3.7.0.tar.gz"
+    amd64.sha256 = "18a5913b67fee405713e4091e5de09ca63a6a1e66abdbe40ac41e2fa679a6564"
+    arm64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-aarch64-3.7.0.tar.gz"
+    arm64.sha256 = "d36335e05867d470c413c8fc1ccbf7fb42ac0afced4d2db54c0428d52cb2ce09"
+    armhf.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-armv6-3.7.0.tar.gz"
+    armhf.sha256 = "e235b75f9a1a9e8bdad4587d9fffb69040ea05b556899568b132a926507df8ae"
 
     # Autoupdate disabled because the assets are on a custom website. Also it would need arch-specific regex to know what to pick from the release assets
     #autoupdate.strategy = "latest_github_release"

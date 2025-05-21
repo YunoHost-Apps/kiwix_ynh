@@ -12,7 +12,7 @@ Sharing Web content with people without Internet access
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://www.kiwix.org/)
 [![App Demo](https://img.shields.io/badge/App_Demo-blue?style=for-the-badge)](http://library.kiwix.org/)
-[![Version: 3.6.0~ynh5](https://img.shields.io/badge/Version-3.6.0~ynh5-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/kiwix/)
+[![Version: 3.7.0~ynh1](https://img.shields.io/badge/Version-3.7.0~ynh1-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/kiwix/)
 
 <div align="center">
 <a href="https://apps.yunohost.org/app/kiwix"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
