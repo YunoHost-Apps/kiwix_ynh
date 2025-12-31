@@ -7,7 +7,7 @@ name = "Kiwix"
 description.en = "Sharing Web content with people without Internet access"
 description.fr = "Partager du contenu Web avec des personnes sans accès à Internet"
 
-version = "3.7.0~ynh1"
+version = "3.8.1~ynh1"
 
 maintainers = []
 
@@ -19,7 +19,7 @@ admindoc = "https://wiki.kiwix.org/wiki/Kiwix-serve/"
 code = "https://github.com/kiwix/kiwix-tools"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = ["amd64", "armhf", "arm64"]
 multi_instance = true
@@ -41,16 +41,12 @@ ram.runtime = "50M"
 
 [resources]
     [resources.sources.main]
-    amd64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-x86_64-3.7.0.tar.gz"
-    amd64.sha256 = "18a5913b67fee405713e4091e5de09ca63a6a1e66abdbe40ac41e2fa679a6564"
-    arm64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-aarch64-3.7.0.tar.gz"
-    arm64.sha256 = "d36335e05867d470c413c8fc1ccbf7fb42ac0afced4d2db54c0428d52cb2ce09"
-    armhf.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-armv6-3.7.0.tar.gz"
-    armhf.sha256 = "e235b75f9a1a9e8bdad4587d9fffb69040ea05b556899568b132a926507df8ae"
-
-    # Autoupdate disabled because the assets are on a custom website. Also it would need arch-specific regex to know what to pick from the release assets
-    #autoupdate.strategy = "latest_github_release"
-    #autoupdate.needs_manual_tweaks = true
+    amd64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-x86_64-3.8.1.tar.gz"
+    amd64.sha256 = "46557f9a3c3eaada2556a957cf5bc662c07dc6286e8924e04fa3a173f83ff6dd"
+    arm64.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-aarch64-3.8.1.tar.gz"
+    arm64.sha256 = "7b00940e1f5e4642e4ef6e7262543893e105b20e9e97be5352e129c591fa29da"
+    armhf.url = "https://download.kiwix.org/release/kiwix-tools/kiwix-tools_linux-armv6-3.8.1.tar.gz"
+    armhf.sha256 = "0f7e052d99c0d13e690c1855ac04e0d06a3b9201e5459f26a9bfeba016b482c8"
 
     [resources.system_user]
 
